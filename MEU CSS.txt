@@ -1,0 +1,261 @@
+/* === RESET BÁSICO === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ff69b4;
+   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+
+    position: sticky;
+    top: 0;
+    height: 97px;
+    transition: background-color 0.3s ease;
+    
+}
+
+
+
+#h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    background-color: #72f1dc;
+    text-align: center;
+    color: #800080;
+
+
+}
+
+#login {
+
+    color: #800080;
+    font-size: 20px;
+    margin-left: 90px;
+  
+
+
+}
+
+
+#cadastro {
+
+    color: #800080;
+    font-size: 20px;
+    margin-left: 30px;
+   
+
+}
+
+
+
+
+
+#inicio {
+    color: #800080;
+    font-size: 20px;
+    margin-left: 196px;
+    
+}
+
+#produtos {
+    color: #800080;
+    font-size: 20px;
+    
+}
+
+#marcas {
+    color: #800080;
+    font-size: 20px;
+    margin-left: 150px;
+}
+
+#promocoes {
+    color: #800080;
+    font-size: 20px;
+    margin-left: 150px;
+}
+
+#sobre {
+    color: #800080;
+    font-size: 20px;
+    margin-left: 150px;
+   
+}
+
+#h2 {
+    text-align: center;
+    color: #800080;
+    font-size: 30px;
+    background-color: #72f1dc;
+    margin-top: -4px;
+   
+}
+
+.paragrafo {
+    color: white;
+
+}
+
+.preco {
+    color: white;
+
+
+}
+
+.botao {
+    background-color: #007BFF;
+    width: 200px;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 1px solid #2167fc;
+    padding: 7px;
+}
+
+.botao:hover {
+    background-color: #0056b3;
+    /* Cor de fundo ao passar o mouse */
+
+
+
+}
+
+.ver-tudo {
+    display: block;
+    /* Faz com que o botão seja um bloco */
+    margin: 20px auto;
+    /* Margem automática para centralizar horizontalmente */
+    padding: 10px 20px;
+    /* Adiciona algum preenchimento ao botão */
+    background-color: #007BFF;
+    /* Cor de fundo do botão */
+    color: white;
+    /* Cor do texto */
+    border: none;
+    /* Remove a borda padrão */
+    border-radius: 5px;
+    /* Bordas arredondadas */
+    cursor: pointer;
+    /* Cursor de ponteiro */
+
+
+}
+
+.ver-tudo:hover {
+    background-color: #0056b3;
+    /* Cor de fundo ao passar o mouse */
+    transform: scale(1.1);
+    /* Aumenta o botão em 10% */
+}
+
+
+h2 {
+
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    background-color: #72f1dc;
+    text-align: center;
+    color: #800080;
+
+}
+
+.h3 {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    background-color: #72f1dc;
+    text-align: center;
+    color: #800080;
+
+}
+
+.maquiagem-container {
+    display: flex;
+    width: 25%;
+    gap: 30px;
+    margin: 40px;
+    align-items: end;
+
+}
+
+.maquiagem {
+    border: 1px solid blue;
+    border-radius: 5px;
+}
+
+.maquiagem:hover {
+    transform: scale(1.1);
+    /* Aumenta o botão em 10% */
+    transition: transform 0.3s ease;
+}
+
+.infantil-container {
+    display: flex;
+    width: 25%;
+    gap: 27px;
+    margin: 40px;
+    align-items: end;
+
+}
+
+.infantil {
+    border: 1px solid blue;
+    border-radius: 5px;
+
+}
+
+.infantil:hover {
+    transform: scale(1.1);
+    /* Aumenta o botão em 10% */
+    transition: transform 0.3s ease;
+}
+
+.acessorio-container {
+    display: flex;
+    width: 25%;
+    gap: 29px;
+    margin: 40px;
+    align-items: end;
+}
+
+.acessorio {
+    border: 1px solid blue;
+    border-radius: 5px;
+}
+
+.acessorio:hover {
+    transform: scale(1.1);
+    /* Aumenta o botão em 10% */
+    transition: transform 0.3s ease;
+}
+
+
+.oculos-container {
+    display: flex;
+    width: 25%;
+    gap: 30px;
+    margin: 40px;
+    align-items: end;
+
+}
+
+.oculos {
+    border: 1px solid blue;
+    border-radius: 5px;
+
+}
+
+.oculos:hover {
+    transform: scale(1.1);
+    /* Aumenta o botão em 10% */
+    transition: transform 0.3s ease;
+}
+
+
+.roda {
+    background-color: aliceblue;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+}

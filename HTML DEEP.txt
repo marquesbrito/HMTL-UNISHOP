@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>UniShop</title>
+</head>
+<script>
+    // Menu hamburger para mobile
+    document.addEventListener('DOMContentLoaded', function () {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        if (menuToggle) {
+            menuToggle.addEventListener('click', function () {
+                navLinks.classList.toggle('active');
+            });
+        }
+
+        // Fechar menu ao clicar em um link
+        const navItems = document.querySelectorAll('.nav-links a');
+        navItems.forEach(item => {
+            item.addEventListener('click', function () {
+                navLinks.classList.remove('active');
+            });
+        });
+    });
+</script>
+
+<body>
+
+    <nav>
+        <h1 id="h1">Unishop Tudo Que Você Precisa Em um Só Lugar.</h1>
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="nav-links">
+            <a href="#" id="login">Login</a>
+            <a href="#" id="cadastro">Cadastre-se</a>
+            <a href="#" id="inicio">Ínicio</a>
+            <a href="https://listadeprodutos.site/unishopof/#" target="_blank" id="produtos">Produtos</a>
+            <a href="#" id="marcas">Marcas</a>
+            <a href="#" id="promocoes">Promoções</a>
+            <a href="#" id="sobre">Sobre Nós</a>
+        </div>
+    </nav>
+
+    <div>
+        <img class="logo" src="./img/SebraeSC-Mercado-maquiagem.jpeg" width="1905px" height="590" alt="logo Site">
+
+        <h2 id="h2">Confira algumas de nossas maquiagens!</h2>
+    </div>
+
+    <div class="maquiagem-container">
+        <div class="maquiagem">
+            <img src="https://cdn.sistemawbuy.com.br/arquivos/8bb02a0033f44bb0b93784367422718c/produtos/66c9cb4bebce1/66c9cb8a4678c-66c9cb8a4a32a.jpg"
+                alt="BASE FLUIDA DAPOP COR 1" width="200px">
+
+            <p class="paragrafo">BASE FLUIDA DAPOP COR1</p>
+
+            <p class="preco">R$ 20,00😍</p>
+
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="maquiagem">
+            <img src="https://cdn.awsli.com.br/2577/2577879/produto/244566465/1000105282-2tlhzto9o6.png" width="200px">
+            <p class="paragrafo">BASE FLUIDA DAPOP COR 2
+            </p>
+            <p class="preco">R$ 20,00😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="maquiagem">
+            <img src="https://cdn.sistemawbuy.com.br/arquivos/8bb02a0033f44bb0b93784367422718c/produtos/66c9cb4bebce1/66c9cb8a4678c-66c9cb8a4a32a_mini.jpg"
+                alt="Base boca rosa" width="200px">
+            <p class="paragrafo">BASE FLUIDA DAPOP COR 3</p>
+            <p class="preco">R$ 20,00😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="maquiagem">
+            <img src="https://dapop.com.br/cdn/shop/files/DP2158_8_1.png?v=1731960778" alt="Base boca rosa"
+                width="200px">
+            <p class="paragrafo">BASE FLUIDA DAPOP COR 4</p>
+            <p class="preco">R$ 20,00😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="maquiagem">
+            <img src="https://www.unickmake.com.br/uploads/images/wrm3pi3rfve7j3wgpben22zyt53q/w_1600/Imagem-do-WhatsApp-de-2024-12-20-%C3%A0-s--10.02.39_8abc6996.jpg"
+                width="200px">
+            <p class="paragrafo">BASE FLUIDA DAPOP COR 5</p>
+            <p class="preco">R$ 20,00😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="maquiagem">
+            <img src="https://cdn.awsli.com.br/1641/1641981/produto/219515629/corretivo_liquid-zd3cvseg5w.jpg"
+                width="200px">
+            <p class="paragrafo">CORRETIVO LÍQUIDO DAPOP COR 1</p>
+            <p class="preco">R$ 35,00😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="maquiagem">
+            <img src="https://www.tudodemaquiagem.com.br/wp-content/uploads/2023/11/corretivo-camuflagem-cor-2-dapop.jpg"
+                width="200px">
+            <p class="paragrafo">CORRETIVO LÍQUIDO DAPOP COR 2</p>
+            <p class="preco">R$ 35,00😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="maquiagem">
+            <img src="https://www.tudodemaquiagem.com.br/wp-content/uploads/2023/11/corretivo-camuflagem-cor-3-dapop.jpg"
+                width="200px">
+            <p class="paragrafo">CORRETIVO LÍQUIDO DAPOP COR 3</p>
+            <p class="preco">R$ 35,00😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+    <div class="maquiagem-container">
+        <div class="maquiagem">
+            <img src="https://m.media-amazon.com/images/I/81b30YFev1L.jpg" alt="po compact" width="200">
+            <p class="paragrafo">PÓ COMPACTO MELU</p><br>
+            <p class="preco">R$ 25,00😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="maquiagem">
+            <img src="https://ecoms1.com/51331/@v3/1671203675179-f9e025e9958a0354736736cea368d610awsaccesskeyidakiatclmsgfx4j7tu445expires1671808473signaturek90ktav2bqdcnqex4z0rwoforyrg3d.jpg"
+                alt="po banana" width="200px">
+            <p class="paragrafo">PÓ BANANA COMPACTO </p><br>
+            <p class="preco">R$ 25,00😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+
+        </div>
+        <div class="maquiagem">
+            <img src="https://down-br.img.susercontent.com/file/br-11134201-22120-wqsyjhpctplv97"
+                alt="po compacto fenzza" width="200px">
+            <p class="paragrafo">PÓ COMPACTO FENZZA </p><br>
+            <p class="preco">R$ 25,00😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="maquiagem">
+            <img src="https://cdn.awsli.com.br/2500x2500/1789/1789933/produto/261417079a7a6ba6432.jpg"
+                alt="po compact ruby rose" width="200px">
+            <p class="paragrafo">PÓ COMPACTO RUBYROSE </p>
+            <p class="preco">R$ 25,00😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="maquiagem">
+            <img src="https://d5gag3xtge2og.cloudfront.net/producao/33869952/G/po-facial-boca-rosa.webp"
+                alt="po boca rosa" width="200px">
+            <p class="paragrafo">PÓ COMPACTO BOCA ROSA </p>
+            <p class="preco">R$ 30,00😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="maquiagem">
+            <img src="https://cdn.awsli.com.br/2500x2500/616/616737/produto/321364700/15855_fbaed8c5-d6c3-4224-8015-7f0cb517aee7_1200x1200-1on8g9v6ek.jpg"
+                alt="base liquida soft blend" width="200px">
+            <p class="paragrafo">BASE LIQUIUDA SOFT BLEND</p>
+            <p class="preco">R$ 30,00😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="maquiagem">
+            <img src="https://tfczxi.vtexassets.com/arquivos/ids/180211/base-liquida-melu-by-ruby-rose-cor-capa.jpg?v=638209824268900000"
+                alt="base liquida melu" width="200px">
+            <p class="paragrafo">BASE LIQUIUDA MELU BY RUBY ROSE</p>
+            <p class="preco">R$ 30,00😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="maquiagem">
+            <img src="https://cdn.sistemawbuy.com.br/arquivos/86d2d5ed9eeaac6afd00a478c38773ba/produtos/667c2e4e2d904/20240626120616-667c2e6856d87.jpg"
+                alt="base payot" width="210px">
+            <p class="paragrafo">BASE MATTE PAYOT</p>
+            <p class="preco">R$ 30,00😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+
+        </div>
+    </div>
+    <button class="ver-tudo">Ver Tudo</button>
+    </div>
+    <h2>Confira nossos acessórios!</h2>
+    <div class="acessorio-container">
+
+        <div class="acessorio">
+            <img src="https://cartier.vtexassets.com/arquivos/ids/240453-1200-auto?v=638694988827600000&width=1200&height=auto&aspect=true"
+                alt="cartier dourada" width="200px">
+            <p class="paragrafo">BRACELETE DOURADO C/ CHAVE REGULADORA</p>
+            <p class="preco">R$ 50,00😍</p>
+
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+
+        <div>
+            <div class="acessorio">
+                <img src="https://images.tcdn.com.br/img/img_prod/746079/bracelete_organico_amassado_banhado_a_ouro_18k_4309_1_ba76ba8aedf2c8a9205e3ea19b26ee1a.jpg"
+                    alt="bracelete dourado" width="200px">
+                <p class="paragrafo">BRACELETE DEUSA ERA DOURADO</p>
+                <P class="preco">R$ 55,00😍</P>
+                <button class="botao">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+
+        <div>
+            <div class="acessorio">
+                <img src="https://www.baliloves.com.br/cdn/shop/products/braceletefemininoprego_1.png?v=1677616903&width=1445"
+                    alt="bracelete dourado" width="200px">
+                <p class="paragrafo">BRACELETE DUAS PONTAS DOURADO</p>
+                <P class="preco">R$ 100,00😍</P>
+                <button class="botao">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+
+        <div class="acessorio">
+            <img src="https://cdn.awsli.com.br/2500x2500/660/660490/produto/293457675/photoroom_20240806_204827-1p7ws8lwnw.jpeg"
+                alt="bracelete dourado" width="200px">
+            <p class="paragrafo">CHOKER PINGO DE LUZ DOURADO</p>
+            <p class="preco">R$ 150,00😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="acessorio">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT25Hd47hImNFcF5SuprkqobcJSe5nNyuIgiA&s"
+                alt="corrente duo" width="200px">
+            <p class="paragrafo">CORRENTE DUO DOURADA</p>
+            <p class="preco">R$ 200,00😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="acessorio">
+            <img src="https://images.tcdn.com.br/img/img_prod/778877/brinco_em_metal_trancado_em_banho_dourado_tamanho_pequeno_3083_1_6293755a4517a7da15e8929e383c7ef9.jpg"
+                alt="corrente duo" width="200px">
+            <p class="paragrafo">BRINCOS DOURADOS</p>
+            <br>
+            <p class="preco">R$ 200,00😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="acessorio">
+            <img src="https://cdn.awsli.com.br/300x300/1379/1379631/produto/374620617/20251006_193243236_ios-kce3ibqe7o.jpg"
+                alt="corrente duo" width="200px">
+            <p class="paragrafo">COLAR E BRINCOS TREVO DOURADO</p>
+            <p class="preco">R$ 200,00😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="acessorio">
+            <img src="https://www.miresbrandaojoias.com.br/static/47025/sku/aneis-anel-dourado-pr642-p-1704282092972.png"
+                alt="corrente duo" width="200px">
+            <p class="paragrafo">ANEL DOURADO TIPO MATA BURRO</p>
+            <p class="preco">R$ 200,00😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+    <div class="acessorio-container">
+        <div class="acessorio">
+            <img src="https://listadeprodutos.site/unishopof/img/7908836300306.jpg" alt="ANEL ORGANICO S DOURADO"
+                width="200px">
+            <p class="paragrafo">ANEL ORGANICO S DOURADO</p>
+            <p class="preco">R$ 7,00😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="acessorio">
+            <img src="https://listadeprodutos.site/unishopof/img/7908836300305.jpg" alt="ANEL ORGANICO S PRATEADO"
+                width="200px">
+            <p class="paragrafo">ANEL ORGANICO S PRATEADO</p>
+            <p class="preco">R$ 7,00😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="acessorio">
+            <img src="https://listadeprodutos.site/unishopof/img/2036.jpg"
+                alt="CONJ. COLAR E BRINCO FOLHEADO FLOR VAZADA DOURADO" width="200px" height="250">
+            <p class="paragrafo">CONJUNTO COLAR E BRINCO FOLHEADO</p>
+            <p class="preco">R$ 25,00😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="acessorio">
+            <img src="https://listadeprodutos.site/unishopof/img/1010.jpg" alt="CONJUNTO COLAR E BRINCO FOLHEADO"
+                width="200px" height="250">
+            <p class="paragrafo">CONJUNTO COLAR E BRINCO FOLHEADO</p>
+            <p class="preco">R$ 7,00😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="acessorio">
+            <img src="https://listadeprodutos.site/unishopof/img/2030.jpg" alt="KIT CHOKER BRINCO FLOR DOURADO"
+                width="200px" height="250">
+            <p class="paragrafo">KIT CHOKER BRINCO FLOR DOURADO</p>
+            <p class="preco">R$ 28,00😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="acessorio">
+            <img src="https://listadeprodutos.site/unishopof/img/1210.jpg" alt=" BRINNCO 3 EM 1" width="200px"
+                height="270">
+            <p class="paragrafo">BRINCO 3 EM 1 LISO</p>
+            <p class="preco">R$ 12,00😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="acessorio">
+            <img src="https://listadeprodutos.site/unishopof/img/7908836300329.jpg"
+                alt="PULSEIRA ESTRELA CRAVEJADA DOURADA" width="200px">
+            <p class="paragrafo">PULSEIRA ESTRELA CRAVEJADA DOURADA</p>
+            <p class="preco">R$ 18,00😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="acessorio">
+            <img src="https://listadeprodutos.site/unishopof/img/1313.jpg" alt="BRINCO ESTRELA MARINHA" width="200px"
+                height="250">
+            <p class="paragrafo">BRINCO ESTRELA MARINHA</p>
+            <p class="preco">R$ 18,00😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+
+    </div>
+    <button class="ver-tudo">Ver Tudo</button>
+    <h2>Confira nossa seção infantil!</h2>
+
+
+
+    <div class="infantil-container">
+        <div class="infantil">
+            <img src="https://m.media-amazon.com/images/I/81tEEH6MbvL.jpg" alt="kit completo" width="200px">
+            <p class="paragrafo">KIT MAQUIAGEM COMPLETO</p>
+            <p class="preco">R$ 100,00😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="infantil">
+            <img src="https://bebeencanto.com/wp-content/uploads/2022/02/Conjunto-De-Maquiagem-Infantil-Lavavel-Nao-Toxico-Itens-Inclusos.jpg"
+                alt="kit bebe encanto" width="200px">
+            <p class="paragrafo">KIT BEBÊ ENCATADO</p>
+            <p class="preco">R$ 40,00😍</p><br>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="infantil">
+            <img src="https://cdn.awsli.com.br/600x450/472/472373/produto/80873660/bf7c6e1f6a.jpg"
+                alt="unicornio encantado" width="200px" height="200">
+            <p class="paragrafo">UNICÓRNIO ENCATADO</p>
+            <p class="preco">R$ 40,00😍</p><br>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="infantil">
+            <img src="https://images.tcdn.com.br/img/img_prod/639703/maleta_beauty_case_maral_ref_1182_31266_1_d911e832b4cab6b0d36380b8ff5d059b.jpg"
+                alt="kit top" width="200px">
+            <p class="paragrafo">MOCHULINHA DA MAKE</p>
+            <p class="preco">R$ 85,00😍</p> <br>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="infantil">
+            <img src="https://storage.panoverse-cdn.com.br/img.panorama/produto/91874/penteadeira-camarim-3-gavetas-beauty-com-espelho-e-bocais-para-lampada-branco-panorama-moveis-686465-1000x1000-cover.jpg"
+                alt="kit top" width="200px">
+            <p class="paragrafo">PENTEADEIRA</p>
+            <p class="preco">R$ 750,00😍</p> <br>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="infantil">
+            <img src="https://down-br.img.susercontent.com/file/sg-11134201-7rce9-lr93p9y0ra1697" alt="kit top"
+                width="200px">
+            <p class="paragrafo">ESTOJO DE MAQUIAGEM</p>
+            <p class="preco">R$ 25,00😍</p> <br>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="infantil">
+            <img src="https://cdn.awsli.com.br/2500x2500/2653/2653914/produto/367008472/conjunto-maquiagem-manicure-infantil-babyland-completo-make--7--i1p7l3jbr2.png"
+                alt="kit top" width="200px">
+            <p class="paragrafo">O KIT MAIS COMPLETO</p>
+            <p class="preco">R$ 200,00😍</p> <br>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="infantil">
+            <img src="https://m.media-amazon.com/images/I/71jy2aG-jxL._AC_SL1200_.jpg" alt="kit top" width="200px">
+            <p class="paragrafo">KIT COZINHA </p>
+            <p class="preco">R$ 250,00😍</p> <br>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+    <div class="infantil-container">
+        <div class="infantil">
+            <img src="https://cdn.awsli.com.br/616/616737/produto/126217019c93f59092a.jpg" width="200">
+            <p class="paragrafo">PALETA INFANTIL</p>
+            <p class="preco">R$ 30,00😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="infantil">
+            <img src="https://m.media-amazon.com/images/I/61QOC2KYkPL._AC_UF894,1000_QL80_.jpg" width="200"
+                height="200">
+            <p class="paragrafo">KIT NA MALETA</p>
+            <p class="preco">R$ 60,00😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="infantil">
+            <img src="https://img.lojasrenner.com.br/item/928141054/original/2.jpg" width="200" height="200">
+            <p class="paragrafo">MALETA FELIZ</p>
+            <p class="preco">R$ 60,00😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="infantil">
+            <img src="https://imgs.casasbahia.com.br/1561110859/1xg.jpg?imwidth=1000" alt="bolsa make" width="200px">
+            <p class="paragrafo">BOLSA CAT MAKE</p>
+            <p class="preco">R$ 75,OO😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="infantil">
+            <img src="https://www.pirulitei.com.br/wp-content/uploads/2015/01/PetitSophie_1.jpg" alt="bolsa make"
+                width="200" height="200">
+            <p class="paragrafo">BAG PARA MAQUIAGEM</p>
+            <p class="preco">R$ 75,OO😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="infantil">
+            <img src="https://imgs.casasbahia.com.br/1520323353/1xg.jpg?imwidth=1000" alt="kit sophie" width="200px">
+            <p class="paragrafo">KIT SOPHIE</p>
+            <p class="preco">R$ 125,OO😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="infantil">
+            <img src="https://www.drogaraia.com.br/_next/image?url=https%3A%2F%2Fproduct-data.raiadrogasil.io%2Fimages%2F13284508.webp&w=3840&q=40"
+                alt="bolsa make" width="183px">
+            <p class="paragrafo">BRILHO LABIAL BABALOO</p>
+            <p class="preco">R$ 75,OO😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="infantil">
+            <img src="https://cdn.awsli.com.br/2500x2500/616/616737/produto/239446951f28b813eb8.jpg" alt="bolsa make"
+                width="200px">
+            <p class="paragrafo">BRILHO LABIAL </p>
+            <p class="preco">R$ 75,OO😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+    <div class="infantil-container">
+        <div class="infantil">
+            <img src="https://edimais.vtexassets.com/arquivos/ids/161702/Xuxinha-de-Cabelo-Pacote-com-24-unidades-Colorido--2-.png?v=637465925401470000"
+                alt="kit chuchinha" width="200px">
+            <p class="paragrafo">KIT CHUCHINHA</p>
+            <p class="preco">R$ 5,OO😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="infantil">
+            <img src="https://laraacessorios.com.br/wp-content/uploads/2021/05/20210507_095354.jpg" alt="TIARA INFANTIL"
+                width="200px">
+            <p class="paragrafo">TIARA INFANTIL</p>
+            <p class="preco">R$ 12,OO😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="infantil">
+            <img src="https://dcdn-us.mitiendanube.com/stores/002/471/804/products/whatsapp-image-2024-08-04-at-18-32-25-1-792599e7a00bd5bf8517231650014478-1024-1024.jpeg"
+                alt="kit de acessorio" width="200" height="183">
+            <p class="paragrafo">KIT ACESSÓRIOS TEMATICOS</p>
+            <p class="preco">R$ 12,OO😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="infantil">
+            <img src="https://dafuatacado.com.br/cdn/shop/files/Photoroom-20241114-134547_1000x.png?v=1731603000"
+                alt="acessorios" width="200px">
+            <p class="paragrafo">ACESSÓRIOS PARA JOIAS</p>
+            <p class="preco">R$ 12,OO😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="infantil">
+            <img src="https://images.tcdn.com.br/img/img_prod/944493/par_de_tiaras_presilha_cabelo_infantil_modelos_variados_2789_2_67963494d8986d33f1bf1063d2600e97.jpg"
+                alt="TIARA INFANTIL" width="200px">
+            <p class="paragrafo">TIARA INFANTIL</p>
+            <p class="preco">R$ 12,OO😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="infantil">
+            <img src="https://55564.cdn.simplo7.net/static/55564/sku/acessorios-tiaras-tiara-infantil-pink-maxxi-no-lurex-glitter-1686076665218.jpg"
+                alt="TIARA INFANTIL ROSA CHARMOSA" width="200" height="183">
+            <p class="paragrafo">TIARA INFANTIL ROSA CHAMOSA</p>
+            <p class="preco">R$ 12,OO😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="infantil">
+            <img src="https://ae01.alicdn.com/kf/S937e0c167b5449a097ac10ec75cc66800.jpg" alt="laço infantil" width="200"
+                height="183">
+            <p class="paragrafo">LAÇO INFANTIL COM PRESILHA</p>
+            <p class="preco">R$ 12,OO😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="infantil">
+            <img src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-ltn5ysm7a7mx22" alt="kit com 3 laços"
+                width="200px">
+            <p class="paragrafo">KIT COM 3 LAÇOS</p>
+            <p class="preco">R$ 12,OO😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+    <button class="ver-tudo">Ver Tudo</button>
+    <h3 class="h3">Confira nossa seção de óculos!</h3>
+
+    <div class="oculos-container">
+
+        <div class="oculos">
+            <img src="https://listadeprodutos.site/unishopof/img/3101.jpg" alt="black spot jaguar" width="200px">
+            <p class="paragrafo">ÓCULOS BLACK SPOT JAGUAR</p>
+            <p class="preco">R$ 29,OO😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+
+        </div>
+        <div class="oculos">
+            <img src="https://listadeprodutos.site/unishopof/img/2126.jpg" alt="GLASSES OF THE MOMENT" width="200px">
+
+            <p class="paragrafo"> GLASSES OF THE MOMENT</p>
+            <p class="preco">R$ 29,OO😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="oculos">
+            <img src="https://listadeprodutos.site/unishopof/img/3100.jpg" alt="GLASSES PERFECTION" width="200px">
+            <p class="paragrafo"> GLASSES PERFECTION COLLECTION 2</p>
+            <p class="preco">R$ 29,OO😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="oculos">
+            <img src="https://listadeprodutos.site/unishopof/img/609.jpg" alt="OCULOS FEMININO ARMACAO GATINHO"
+                width="200px" height="265px">
+            <p class="paragrafo">ÓCULOS FEMININO ARMACAO GATINHO</p>
+            <p class="preco">R$ 42,OO😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="oculos">
+            <img src="https://listadeprodutos.site/unishopof/img/613.jpg" alt="OCULOS FEMININO LENTES COLORS"
+                width="200px" height="265px">
+            <p class="paragrafo">ÓCULOS FEMININO LENTES COLORS</p>
+            <p class="preco">R$ 35,OO😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="oculos">
+            <img src="https://listadeprodutos.site/unishopof/img/619.jpg" alt="OCULOS MASCULINO PRETO POLARIZADO"
+                width="200px" height="265px">
+            <p class="paragrafo">ÓCULOS MASCULINO PRETO POLARIZADO</p>
+            <p class="preco">R$ 29,OO😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="oculos">
+            <img src="https://listadeprodutos.site/unishopof/img/3104.jpg" alt="OCULOS AMAZON JAGUAR" width="200px">
+            <p class="paragrafo">ÓCULOS AMAZON JAGUAR</p>
+            <p class="preco">R$ 39,OO😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="oculos">
+            <img src="https://listadeprodutos.site/unishopof/img/2128.jpg" alt="OCULOS BEAUTIFUL GLASSES" width="200px">
+            <p class="paragrafo">ÓCULOS BEAUTIFUL GLASSES</p>
+            <p class="preco">R$ 39,OO😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+
+    <div class="oculos-container">
+
+        <div class="oculos">
+            <img src="https://listadeprodutos.site/unishopof/img/3103.jpg" alt="OCULOS BROWN CANDY" width="200px">
+            <p class="paragrafo">ÓCULOS BROWN CANDY</p>
+            <p class="preco">R$ 29,OO😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="oculos">
+            <img src="https://listadeprodutos.site/unishopof/img/601.jpg" alt="OCULOS DARK GLASSES" width="200px"
+                height="265px">
+            <p class="paragrafo">ÓCULOS DARK GLASSES</p>
+            <p class="preco">R$ 38,OO😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="oculos">
+            <img src="https://listadeprodutos.site/unishopof/img/606.jpg" alt="OCULOS DARK GLASSES MASCULINO"
+                width="200px" height="265px">
+            <p class="paragrafo">ÓCULOS DARK GLASS</p>
+            <p class="preco">R$ 42,OO😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="oculos">
+            <img src="https://listadeprodutos.site/unishopof/img/608.jpg" alt="OCULOS DARK GOLD" width="200px"
+                height="265px">
+            <p class="paragrafo">ÓCULOS DARK GLASS</p>
+            <p class="preco">R$ 38,OO😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="oculos">
+            <img src="https://listadeprodutos.site/unishopof/img/607.jpg" alt="OCULOS FEMININO DARK BLACK" width="200px"
+                height="265px">
+            <p class="paragrafo">ÓCULOS DARK BLACK</p>
+            <p class="preco">R$ 38,OO😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="oculos">
+            <img src="https://listadeprodutos.site/unishopof/img/627.jpg" alt="OCULOS FEMININO ONCA LENTE DEGRADE"
+                width="200px" height="265px">
+            <p class="paragrafo">ÓCULOS DEGRADE</p>
+            <p class="preco">R$ 38,OO😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="oculos">
+            <img src="https://listadeprodutos.site/unishopof/img/611.jpg" alt="OCULOS FEMININO PRETO" width="200px"
+                height="265px">
+            <p class="paragrafo">ÓCULOS PRETO</p>
+            <p class="preco">R$ 38,OO😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="oculos">
+            <img src="https://listadeprodutos.site/unishopof/img/612.jpg" alt="OCULOS FEMININO QUADRADO PRETO"
+                width="200px" height="265px">
+            <p class="paragrafo">OCULOS FEMININO </p>
+            <p class="preco">R$ 29,OO😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+    <div class="oculos-container">
+
+        <div class="oculos">
+            <img src="https://listadeprodutos.site/unishopof/img/621.jpg" alt="OCULOS FEMININO REDONDO" width="200px"
+                height="265px">
+            <p class="paragrafo">ÓCULOS ARREDONDADO</p>
+            <p class="preco">R$ 29,OO😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="oculos">
+            <img src="https://listadeprodutos.site/unishopof/img/2125.jpg" alt="OCULOS GLASSES" width="200px"
+                height="265px">
+            <p class="paragrafo">ÓCULOS GLASSES</p>
+            <p class="preco">R$ 39,OO😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="oculos">
+            <img src="https://listadeprodutos.site/unishopof/img/600.jpg" alt="OCULOS HALF DARK" width="200px"
+                height="265px">
+            <p class="paragrafo">ÓCULOS HALF DARK</p>
+            <p class="preco">R$ 38,OO😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="oculos">
+            <img src="https://listadeprodutos.site/unishopof/img/605.jpg" alt="OCULOS HALF DARK MASCULINO" width="200px"
+                height="265px">
+            <p class="paragrafo">ÓCULOS DARK</p>
+            <p class="preco">R$ 38,OO😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="oculos">
+            <img src="https://listadeprodutos.site/unishopof/img/2123.jpg" alt="OCULOS HEXAGONAL" width="200px"
+                height="265px">
+            <p class="paragrafo">ÓCULOS HEXAGONAL</p>
+            <p class="preco">R$ 38,OO😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="oculos">
+            <img src="https://listadeprodutos.site/unishopof/img/626.jpg" alt="OCULOS HEXAGONAL ARMAÇÃO" width="200px"
+                height="265px">
+            <p class="paragrafo">ÓCULOS HEXAGONAL 2</p>
+            <p class="preco">R$ 38,OO😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="oculos">
+            <img src="https://listadeprodutos.site/unishopof/img/616.jpg" alt="OCULOS INSPIRAÇÃO PRADA" width="200px"
+                height="249px">
+            <p class="paragrafo">ÓCULOS INSPIRAÇÃO PRADA</p>
+            <p class="preco">R$ 38,OO😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="oculos">
+            <img src="https://listadeprodutos.site/unishopof/img/604.jpg" alt="OCULOS INSPIRACAO VIRGINIA" width="200px"
+                height="249px">
+            <p class="paragrafo">ÓCULOS INSPIRACAO VIRGINIA</p>
+            <p class="preco">R$ 38,OO😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+    <div class="oculos-container">
+
+        <div class="oculos">
+            <img src="https://listadeprodutos.site/unishopof/img/602.jpg"
+                alt="OCULOS INSPIRACAO VIRGINIA LENTES COLORIDAS" width="200px" height="265px">
+            <p class="paragrafo">ÓCULOS INSPIRACAO VIRGINIA2</p>
+            <p class="preco">R$ 38,OO😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="oculos">
+            <img src="https://listadeprodutos.site/unishopof/img/603.jpg" alt="OCULOS INSPIRACAO VIRGINIA PRETO"
+                width="200px" height="265px">
+            <p class="paragrafo">OCULOS INSPIRACAO VIRGINIA PRETO</p>
+            <p class="preco">R$ 38,OO😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="oculos">
+            <img src="https://listadeprodutos.site/unishopof/img/617.jpg" alt="OCULOS LENTE POLARIZADA" width="200px"
+                height="265px">
+            <p class="paragrafo">ÓCULOS LENTE POLARIZADA</p>
+            <p class="preco">R$ 29,OO😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="oculos">
+            <img src="https://listadeprodutos.site/unishopof/img/615.jpg" alt="OCULOS MARROM ARMACAO DOURADA"
+                width="200px" height="265px">
+            <p class="paragrafo">ÓCULOS MARROM ARMACAO DOURADA</p>
+            <p class="preco">R$ 29,OO😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="oculos">
+            <img src="https://listadeprodutos.site/unishopof/img/625.jpg" alt="OCULOS MASCULINO LENTE DEGRADE"
+                width="200px" height="265px">
+            <p class="paragrafo">OCULOS MASCULINO LENTE DEGRADE</p>
+            <p class="preco">R$ 38,OO😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="oculos">
+            <img src="https://listadeprodutos.site/unishopof/img/623.jpg" alt="OCULOS MASCULINO LENTE MARROM"
+                width="200px" height="265px">
+            <p class="paragrafo">ÓCULOS MASCULINO LENTE MARROM</p>
+            <p class="preco">R$ 38,OO😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="oculos">
+            <img src="https://listadeprodutos.site/unishopof/img/620.jpg" alt="OCULOS MASCULINO OVAL POLARIZADO"
+                width="200px" height="265px">
+            <p class="paragrafo">ÓCULOS MASCULINO OVAL POLARIZADO</p>
+            <p class="preco">R$ 29,OO😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="oculos">
+            <img src="https://listadeprodutos.site/unishopof/img/614.jpg" alt="OCULOS MASCULINO QUADRADO FINO"
+                width="200px" height="265px">
+            <p class="paragrafo">ÓCULOS MASCULINO QUADRADO FINO</p>
+            <p class="preco">R$ 39,OO😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+
+    <div class="oculos-container">
+
+        <div class="oculos">
+            <img src="https://listadeprodutos.site/unishopof/img/618.jpg" alt="OCULOS MASCULINO QUADRADO LENTE"
+                width="200px" height="265px">
+            <p class="paragrafo">ÓCULOS MASCULINO QUADRADO LENTE</p>
+            <p class="preco">R$ 29,OO😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="oculos">
+            <img src="https://listadeprodutos.site/unishopof/img/2124.jpg" alt="OCULOS OCTAGONAL" width="200px"
+                height="265px">
+
+            <p class="paragrafo">ÓCULOS OCTAGONAL BLACK</p>
+            <p class="preco">R$ 35,OO😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="oculos">
+            <img src="https://listadeprodutos.site/unishopof/img/2122.jpg" alt="OCULOS OUNCE FAT" width="200px"
+                height="265px">
+            <p class="paragrafo">OCULOS OUNCE FAT GOLD NIGTH</p>
+            <p class="preco">R$ 25,OO😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="oculos">
+            <img src="https://listadeprodutos.site/unishopof/img/610.jpg" alt="OCULOS P ARMACAO GATINHO" width="200px"
+                height="265px">
+            <p class="paragrafo">ÓCULOS P ARMACAO GATINHO</p>
+            <p class="preco">R$ 35,OO😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="oculos">
+            <img src="https://listadeprodutos.site/unishopof/img/622.jpg" alt="OCULOS RAY BAN" width="200px"
+                height="265px">
+            <p class="paragrafo">ÓCULOS RAY BAN PEQUENO</p>
+            <p class="preco">R$ 29,OO😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="oculos">
+            <img src="https://listadeprodutos.site/unishopof/img/624.jpg" alt="OCULOS REDONDO FEMININO P" width="200px"
+                height="265px">
+            <p class="paragrafo">ÓCULOS REDONDO FEMININO P</p>
+            <p class="preco">R$ 25,OO😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="oculos">
+            <img src="https://listadeprodutos.site/unishopof/img/2129.jpg" alt="OCULOS SMALL GLASSES" width="200px"
+                height="265px">
+            <p class="paragrafo">ÓCULOS SMALL GLASSES GRIFF</p>
+            <p class="preco">R$ 29,OO😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="oculos">
+            <img src="https://listadeprodutos.site/unishopof/img/2121.jpg" alt="OCULOS STYLE THIN" width="200px"
+                height="265px">
+            <p class="paragrafo">ÓCULOS STYLE THIN TOKEN</p>
+            <p class="preco">R$ 35,OO😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+    <div class="oculos-container">
+        <div class="oculos">
+            <img src="https://listadeprodutos.site/unishopof/img/3102.jpg" alt="OCULOS SUNGLASSES FIFTY" width="200px"
+                height="265px">
+
+            <p class="paragrafo">ÓCULOS STYLE</p>
+            <p class="preco">R$ 35,OO😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+        <div class="oculos">
+            <img src="https://listadeprodutos.site/unishopof/img/2127.jpg" alt="OCULOS WOMEN'S GLASSES" width="200px"
+                height="265px">
+            <p class="paragrafo">ÓCULOS GLASSES</p>
+            <p class="preco">R$ 29,OO😍</p>
+            <button class="botao">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+    </div>
+    </div><button class="ver-tudo">Ver Tudo</button>
+    <footer>
+        <p class="roda">2025 - UniShop. Todos os direitos reservados.</p>
+    </footer>
+
+    </div>
+    </div>
+</body>
+
+</html>
